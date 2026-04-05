@@ -44,9 +44,7 @@ public class Game {
         return maxAttempts-attempts;
 
     }
-    public int getAttemptsUsed() {
-        return attempts;
-    }
+
 
 
 

@@ -1,5 +1,4 @@
 package App;
-
 import java.util.Scanner;
 import Game.*;
 public class Main {
@@ -12,7 +11,7 @@ public class Main {
             Game game = new Game(1, 100);
             System.out.println("Welcome! Guess a number between 1 and 100. You have 10 attempts.");
             while (!game.isGameOver()) {
-                int attemptNum = game.getAttemptsUsed() + 1;
+                int attemptNum = game.getAttempts() + 1;
                 System.out.print("Attempt " + attemptNum + "/" + game.getMaxAttempts() + " — Enter your guess: ");
 
                 String input = sc.next();
