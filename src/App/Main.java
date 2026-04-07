@@ -1,12 +1,11 @@
 package App;
-import java.util.Scanner;
 import Game.*;
 import javax.swing.JOptionPane;
 
 public class Main {
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+
         Validator validator = new Validator();
         while (true) {
             boolean won = false;
