@@ -14,7 +14,10 @@ public class Main {
             while (!game.isGameOver()) {
                 int attemptNum = game.getAttempts() + 1;
 
-                String input =  JOptionPane.showInputDialog("Attempt " + attemptNum + "/" + game.getMaxAttempts() + " — Enter your guess: ");
+                String input =  JOptionPane.showInputDialog("Attempt " + attemptNum + "/" + game.getMaxAttempts() + " — Enter your guess: or exit" );
+                if (input.equals("exit")) {
+                    return;
+                }
 
                 if (!validator.isValidNumber(input)) {
                     JOptionPane.showMessageDialog(null,"Invalid input");
